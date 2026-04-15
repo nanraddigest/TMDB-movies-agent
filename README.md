@@ -1,6 +1,6 @@
 # Movie Analysis Agent
 
-A multi-agent data analyst system that performs **Collect → EDA → Hypothesize** on movie data using the TMDB API and MovieLens dataset.
+A multi-agent data analyst system that performs **Collect → EDA → Hypothesize** on movie data using the TMDB API and MovieLens dataset. This agent's primary use case is to understand general movie trends pertaining to genre, directors, revenue etc. amongst others listed below in the data section.
 
 Built with **Google ADK** (Agent Development Kit) + **Vertex AI** (Gemini 2.0 Flash), deployed on **Google Cloud Run**.
 
