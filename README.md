@@ -10,14 +10,12 @@ Built with **Google ADK** (Agent Development Kit) + **Vertex AI** (Gemini 2.0 Fl
 The agent draws on two complementary movie data sources:
 
 ### 1. TMDB API (live, fetched at runtime)
-The Movie Database REST API supplies up-to-date movie metadata via HTTPS. Per movie we pull title, release date and year, popularity, vote average and count, genres, runtime, budget, revenue, original language, production companies, director, and top-billed cast. Endpoints used: `search/movie`, `discover/movie`, `movie/{id}?append_to_response=credits`, and `trending/movie/{day|week}`. Covers virtually every theatrical and streaming release worldwide.
+The Movie Database REST API supplies up-to-date movie metadata via HTTPS. Per movie we pull title, release date and year, popularity, vote average and count, genres, runtime, budget, revenue, original language, production companies, director, and top-billed cast. Covers virtually every theatrical and streaming release worldwide.
 
 ### 2. MovieLens Small (bundled CSVs, queried in-process with DuckDB)
 A snapshot of the GroupLens MovieLens dataset shipped under `data/`, queried as SQL tables. MovieLens is the depth source (real audience rating distributions and free-text tagging that TMDB doesn't expose).
 
 ## Example Questions
-
-This Agent specifically focuses on three features related to movies: revenue, genre and directors. It can provide information on how these features have shifted over time, and along with visualizations supporting a hypothesis. The tool can answer general questions pertaining to the three features.
 
 - "What makes a movie profitable?"
 - "How have horror movies evolved over the past 20 years?"
