@@ -6,6 +6,17 @@ Built with **Google ADK** (Agent Development Kit) + **Vertex AI** (Gemini 2.0 Fl
 
 ---
 
+## Example Questions
+
+This Agent specifically focuses on three features related to movies: revenue, genre and directors. It can provide information on how these features have shifted over time, and along with visualizations supporting a hypothesis. The tool can answer general questions pertaining to the three features.
+
+- "What makes a movie profitable?"
+- "How have horror movies evolved over the past 20 years?"
+- "What do the highest-rated films of the 2010s have in common?"
+- "What are the trends in top movies this week?"
+
+---
+
 ## Three-Step Data Analysis Pipeline
 
 ### Step 1: Collect
@@ -162,16 +173,6 @@ gcloud run deploy movie-analysis-agent \
   --allow-unauthenticated \
   --set-env-vars "TMDB_API_TOKEN=<token>,GOOGLE_CLOUD_PROJECT=<project>,GOOGLE_CLOUD_LOCATION=us-central1,GOOGLE_GENAI_USE_VERTEXAI=true"
 ```
-
----
-
-## Example Questions
-
-- "What makes a movie profitable?"
-- "How have horror movies evolved over the past 20 years?"
-- "What do the highest-rated films of the 2010s have in common?"
-- "How does audience rating relate to box office revenue?"
-- "What are the trends in trending movies this week?"
 
 ---
 
