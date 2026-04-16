@@ -4,6 +4,8 @@ A multi-agent data analyst system that performs **Collect → EDA → Hypothesiz
 
 Built with **Google ADK** (Agent Development Kit) + **Vertex AI** (Gemini 2.0 Flash), deployed on **Google Cloud Run**.
 
+Live Link: https://movie-agent-916617099936.us-central1.run.app
+
 ---
 ## Data
 
